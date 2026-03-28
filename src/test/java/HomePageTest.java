@@ -7,9 +7,11 @@ import static ge.tbc.dataObject.HomePageData.*;
 public class HomePageTest extends Runner {
     HomePageSteps homePageSteps = new HomePageSteps();
     @Test
-    public void successfullFlightSearch(){
+    public void successfullHotelSearch(){
         homePageSteps
-                .fillOriginInput(originCity)
-                .fillDestinationInput(destinationCity);
+                .fillDestinationInput(departurePlace)
+                .closePopup()
+                .fillCheckInCheckOut();
+
     }
 }

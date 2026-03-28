@@ -1,13 +1,13 @@
 package utils;
 
 
+import com.codeborne.selenide.Condition;
 import com.codeborne.selenide.Configuration;
 import com.codeborne.selenide.Selenide;
 import org.openqa.selenium.firefox.FirefoxOptions;
 import org.testng.annotations.*;
 
-import static com.codeborne.selenide.Selenide.closeWebDriver;
-import static com.codeborne.selenide.Selenide.open;
+import static com.codeborne.selenide.Selenide.*;
 
 public class Runner {
     @BeforeClass
@@ -22,7 +22,9 @@ public class Runner {
         Configuration.headless = false;
         Configuration.pageLoadStrategy = "normal";
         Configuration.pageLoadTimeout = 60000;
-        open("https://www.wizzair.com/en-gb");
+        open("https://www.booking.com/");
+
+
     }
     @AfterClass
     public void tearDown(){
