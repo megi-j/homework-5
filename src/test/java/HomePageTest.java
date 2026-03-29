@@ -1,4 +1,4 @@
-import ge.tbc.steps.HomePageSteps;
+import ge.tbc.stepObject.HomePageSteps;
 import org.testng.annotations.Test;
 import utils.Runner;
 
@@ -11,7 +11,8 @@ public class HomePageTest extends Runner {
         homePageSteps
                 .fillDestinationInput(departurePlace)
                 .closePopup()
-                .fillCheckInCheckOut();
+                .fillCheckInCheckOut()
+                .searchButtonClick();
 
     }
 }

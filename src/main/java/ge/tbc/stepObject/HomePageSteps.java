@@ -1,10 +1,9 @@
-package ge.tbc.steps;
+package ge.tbc.stepObject;
 
 import com.codeborne.selenide.Condition;
 import ge.tbc.pageObject.HomePage;
 
 import static com.codeborne.selenide.Selenide.$;
-import static ge.tbc.dataObject.HomePageData.departurePlace;
 
 public class HomePageSteps extends HomePage {
     public HomePageSteps fillDestinationInput(String destinationInputValue){
@@ -24,4 +23,8 @@ public class HomePageSteps extends HomePage {
         return this;
     }
 
+    public HomePageSteps searchButtonClick(){
+        searchButton.shouldBe(Condition.visible).click();
+        return this;
+    }
 }

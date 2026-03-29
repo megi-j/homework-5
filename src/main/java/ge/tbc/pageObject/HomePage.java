@@ -3,6 +3,7 @@ package ge.tbc.pageObject;
 import com.codeborne.selenide.SelenideElement;
 
 import static com.codeborne.selenide.Selenide.$;
+import static com.codeborne.selenide.Selenide.$x;
 
 public class HomePage {
     public SelenideElement
@@ -10,5 +11,6 @@ public class HomePage {
             checkInCheckOutDateButton = $("button[data-testid='searchbox-dates-container']"),
             checkInDate = $("span[data-date='2026-04-01']"),
             checkOutDate = $("span[data-date='2026-04-05']"),
-            popup = $("button[aria-label='Dismiss sign-in info.']");
+            popup = $("button[aria-label='Dismiss sign-in info.']"),
+            searchButton = $("button[type='submit']");
 }
