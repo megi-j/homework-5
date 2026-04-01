@@ -9,10 +9,11 @@ public class HomePageTest extends Runner {
     @Test
     public void successfullHotelSearch(){
         homePageSteps
-                .fillDestinationInput(departurePlace)
                 .closePopup()
+                .fillDestinationInput(departurePlace)
                 .fillCheckInCheckOut()
-                .searchButtonClick();
+                .searchButtonClick()
+                .checkReviewScoreFilter();
 
     }
 }

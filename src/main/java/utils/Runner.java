@@ -13,6 +13,7 @@ public class Runner {
     @BeforeClass
     public void setUp(){
         FirefoxOptions options = new FirefoxOptions();
+        options.addArguments("--start-maximized");
         options.addPreference("geo.enabled", false);
         options.addPreference("permissions.default.geo", 2);
 

@@ -12,5 +12,7 @@ public class HomePage {
             checkInDate = $("span[data-date='2026-04-01']"),
             checkOutDate = $("span[data-date='2026-04-05']"),
             popup = $("button[aria-label='Dismiss sign-in info.']"),
-            searchButton = $("button[type='submit']");
+            searchButton = $("button[type='submit']"),
+            filtersBox = $("div[data-testid='filters-sidebar']"),
+            reviewScore = $("div=data-testid='filters-group'");
 }
